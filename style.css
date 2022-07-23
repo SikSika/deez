@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#firstLine {
+	color: white;
+}
+
+.boxes {
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}
+
+#box1 {
+	background-image: url("Photos/Woody.png");
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#box1::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top,black,transparent);
+}
+
+#box2 {
+	position: relative;
+	padding: 20% 100px;
+	background-color: black;
+	color: white;
+}
+
+#paragraph {
+	font-size: 23px;
+}
+
+#box3 {
+	position: relative;
+	padding: 20% 100px;
+	background-image: url("Photos/background2.png");
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#box3::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to bottom,black,transparent);
+}
+
+
+
+#rock {
+	margin-top: -1500px;
+	position: absolute;
+	z-index: 99;
+	width: 300px;
+	transform: translateZ(-3);
+	opacity: 0.6;
+	animation: slideRight 7s infinite;
+	animation-timing-function: ease-in-out;
+	filter: drop-shadow(5px 5px #222222);
+}
+
+
+
+@keyframes slideRight {
+  from {left: 0%}
+  to {left: 100%;}
+}
+
+#rick {
+	margin-top: -1200px;
+	position: absolute;
+	z-index: 99;
+	width: 300px;
+	transform: translateZ(-3);
+	opacity: 0.6;
+	animation: slideLeft 7s infinite;
+	animation-timing-function: ease-in-out;
+	filter: drop-shadow(5px 5px #222222);
+}
+
+
+
+@keyframes slideLeft {
+  from {right: 0%}
+  to {right: 100%;}
+}
+
+
